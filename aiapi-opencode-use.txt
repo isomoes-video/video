@@ -1,0 +1,15 @@
+中文标题：Isomoes API 接入 OpenCode 使用教程
+English Title: How to Use Isomoes API with OpenCode
+
+本视频介绍了如何将 Isomoes API 接入到 OpenCode 中使用。视频首先说明 Isomoes API 已对接 GPT、Anthropic（Claude）和 Google 三家主流国际模型厂商，每家厂商提供最强模型与对应轻量版本，例如 GPT-5.4 与 GPT-5.4 mini、Claude Sonnet 4.6 与 Claude Haiku 4.6、Gemini Pro 3.1 与 Gemini Flash 3。
+
+配置流程方面，视频演示了从注册账号、充值到创建 API 令牌的完整步骤，并着重介绍了如何通过环境变量而非明文方式将 API Key 写入 OpenCode 配置文件，以避免密钥泄露风险。
+
+演示阶段，视频在 OpenCode 中依次切换 Gemini、GPT-5.4 和 Claude Sonnet 4.6 三个模型，验证各模型的可用性与响应速度。结果显示 GPT 和 Claude 的响应速度接近原生直连体验。最后通过查看使用日志，详细说明了各次请求的计费情况，特别指出 Claude 的缓存写入与读取对费用的影响，以及长对话场景下缓存的成本优势。
+
+00:00  简介
+01:03  模型接入
+01:29  OpenCode配置
+02:16  演示切换
+03:42  使用日志
+04:51  总结
