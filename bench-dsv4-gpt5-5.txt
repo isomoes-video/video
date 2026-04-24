@@ -1,0 +1,16 @@
+中文标题：GPT5.5 与 DeepSeek V4 Pro Agent Bench 对比
+English Title: GPT5.5 vs DeepSeek V4 Pro Agent Benchmark
+
+本期视频基于此前搭建的 Agent Bench 框架，对 2026 年 4 月 24 日新发布的 GPT5.5 和 DeepSeek V4 Pro 进行简短性能对比，并与旧数据中的 Claude Sonnet 4.6、GPT5.3 Codex 等模型表现进行参照。作者先说明当前 benchmark 仍存在明显局限，包括样本空间较小、任务设置可能不够合理，以及评分模型较为粗糙。目前评分主要从任务迭代步数、每次交互延迟、总耗时和 token 成本等维度进行惩罚扣分，同时任务结果基本采用通过或不通过的二值判断，因此结论更适合作为早期观察，而非严格排名。
+
+在实际观察中，作者认为 DeepSeek V4 Pro 的回答风格和任务表现曲线与 Claude Sonnet 系列有一定相似性，而 GPT5.5 的策略路线则与 Claude Sonnet 呈现出较明显的差异。将 GPT5.5 与更偏向 agent 任务的 GPT5.3 Codex 对比后，作者指出在当前这 6 个简单 case 中，GPT5.5 的表现暂时不如 GPT5.3 Codex。后续 Agent Bench 项目计划加入更多复杂任务和更细分的测试 case，并引入专门的评分模型，让一个 agent 完成任务后由另一个模型 agent 对产出质量进行评分，以提升 benchmark 的说服力和稳定性。视频最后也提到 ismo API 已提供 GPT5.5 试用，并邀请感兴趣的观众关注 Agent Bench 仓库获取后续更新。
+
+00:00  测试背景
+01:30  新增模型
+01:45  曲线对比
+02:57  Codex对比
+03:18  后续改进
+04:49  结果观察
+05:04  模型试用
+05:20  项目关注
+05:35  总结
