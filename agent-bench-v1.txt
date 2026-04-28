@@ -1,0 +1,16 @@
+中文标题：Agent Bench V1 实测对比：Claude、DeepSeek 与 GPT
+English Title: Agent Bench V1: Claude vs DeepSeek vs GPT Benchmark
+
+本视频介绍了 Agent Bench 的 V1 版本更新，从三个维度对多个大模型在 agent 工作流中的表现进行横向对比：任务完成度（0–100 评分）、任务完成速度（耗时）以及 token 消耗量（等价于成本）。参与测试的模型包括 Claude Sonnet 4.6（Solid 4.6）、DeepSeek V4 Pro 以及 GPT-5.5，所有任务均为简单任务，采用统一的评测环境。
+
+测试结果显示，三款模型在简单任务上的评分相差无几，基本都在 90 分甚至满分附近，因此分数本身不是主要区分维度。在 token 消耗方面，GPT-5.5 表现最为节省，是三者中最省 token 的模型；在推理速度方面，Claude Sonnet 4.6 即使在有网络代理的情况下，速度仍优于在国内网络环境下运行的 DeepSeek V4 Pro，说明其吞吐量更高，适合长编码任务。DeepSeek V4 Pro 的推理速度和 token 吞吐量目前相对较慢，但其价格比上述两款国际模型便宜十多倍，具有明显的成本优势。作者预计，随着国内新一代 GPU 算力的提升，DeepSeek 的推理速度和吞吐率将进一步改善，届时在简单任务上有望全面超越国际模型。
+
+视频最后宣布，后续 Agent Bench 将引入更复杂的任务，欢迎感兴趣的观众为 isomoes agent bench 仓库点 star 关注进展。
+
+00:00  版本介绍
+00:44  测试模型
+01:00  总体评分
+01:49  Coding 维度
+02:55  DeepSeek 分析
+03:23  总结结论
+04:18  后续计划
