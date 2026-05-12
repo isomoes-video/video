@@ -1,0 +1,18 @@
+中文标题：我们为什么又切回 Claude Code
+English Title: Why We Switched Back to Claude Code
+
+这期视频分享了我们在离开 Claude Code 大约四个月之后，又重新切换回来的核心原因。最关键的因素来自模型选择：这几个月里国产模型（DeepSeek、Kimi K2.6、GLM 4.7）和 GPT 5.x、Codex 等快速迭代，但由于今年算力短缺，国产模型已经不再便宜，能力上跟 GPT、Claude 仍有差距，因此被我们排除。GPT 5.5 我们用了两三个月，体验尚可，但最近账户风控等级提高后，价格已经和 Claude Sonnet、Opus 系列差不多，在价格相近的情况下，我们更倾向选择能力更强的 Claude 模型。
+
+确定使用 Claude 模型后，下一步是 runtime 的选择。直接走 API 太贵，Pro 订阅不足以支撑 agent 日常使用，因此我们订阅了 Claude Code 的 Max 计划。虽然现在有插件可以把 Claude Code 的订阅额度运行在 Open Code 里，但存在被官方封禁的风险，对于价格更高的 Max 订阅来说风险代价过大，所以从稳健的角度，我们选择直接用 Claude Code 作为 agent runtime。此外，同一个模型在不同 runtime 下，cache 命中率的差异也会影响额度消耗，Claude Code 在这方面更有优势。
+
+我们也反思了过去一两个月探索的 "browser first" 方向——用浏览器包装 agent runtime，类似 I Can、I Paper 这类项目。但实际使用下来发现，对 multi-agent 工作流并没有带来明显提升。人的 review 能力本身是有限的，同时开两三个 session 就已经接近认知负载上限，浏览器和终端在这个层面没有效率差异，唯一的区别只是快捷键。用 Claude Code 配合 tmux 同样可以实现多 session 并行对话，tmux 常用快捷键也不多，认知负担没想象中高。
+
+至于之前提到的 forever stack 四层技术栈，整体迁移成本很低：模型换成 Claude Opus/Sonnet，runtime 切到 Claude Code，workflow、skill、sub agent、superpower 等配置都可以继续复用；review 从浏览器搬到终端反而更顺手。回顾当初从 Claude Code 切到 Open Code，是因为 Claude 当时砍了额度、服务也不稳定（一周宕机两三次），加上 Open Code 开源便于二次开发。如今 Claude Code 性价比回升，配合 tmux + Claude Code 的组合是当前风险最低、额度消耗最优、最简洁的方案，后续工作流也可能随时间继续演进。
+
+00:00  开场
+00:18  模型选择
+04:01  runtime
+06:43  browser
+09:59  技术栈
+11:02  迁移背景
+12:31  总结
