@@ -1,0 +1,19 @@
+中文标题：Claude Code Agent Views 并行开发实测
+English Title: Claude Code Agent Views: Parallel Sessions Walkthrough
+
+本期视频介绍 Claude Code 最新推出的 Agent Views 功能，它的核心定位是让用户可以在同一界面下并发地运行多个 Claude Code session，从而把以前需要依赖 web 看板或自研 i 看板才能实现的多会话管理能力，直接内置到了 Claude Code 自身。视频从两种典型的并行场景切入：一种是跨项目并行，在多个不同的项目路径下同时推进任务；另一种是同项目内基于 git worktree 的并行，可以在多个 worktree 中开发不同的 feature，或者用不同的技术栈实现同一个 feature，最后挑选更优的方案合并回主分支。
+
+作者通过一个实际例子演示了使用流程：先在一个 .claude 配置项目里让 agent 检查 GPT Vision 相关配置和工作路径，再在另一个 md2video 项目里让另一个 agent 统计文件数量。两个任务并行运行，互不阻塞。重点介绍了 Agent Views 的一个关键交互：按下空格键可以切换到精简模式，只显示用户输入的 prompt 和当前任务的状态，而不再展示完整的命令执行细节和聊天历史。作者认为这是 Agent Views 区别于传统 multi-agent 工具的最大亮点——传统方式把所有 chat history 全部摊给用户，依赖人工 review 每条命令，当并行 session 数量上到七八个甚至十几个时，人的 review 能力会成为整个 multi-agent 吞吐的瓶颈。而 space 精简模式把具体实现和代码改动透明化，让用户只对目标和结果负责，不再对每行代码负责，从而真正解锁了 Claude Code 的并行能力。
+
+视频后半部分讨论了使用 Agent Views 时需要注意的几个限制。首先，session 目前必须在本地运行；其次，使用受订阅计划的速率限制约束；最关键的一点是，每个 background session 实际上是基于独立的 worktree 运行的，agent 只能修改自己 worktree 内的文件，无法直接改动主分支。因此如果对某个 session 的产出满意，必须及时手动 merge 并 push 回主分支，否则在 worktree 中的改动可能丢失。最后作者总结，Agent Views 配合 space 精简模式非常适合多 agent 并行运行，体验也很惊艳，以后大概率会取代 i 看板和 web 看板这类外部工具。
+
+00:00  介绍
+00:36  并行场景
+01:14  解锁并行
+01:42  跨项目演示
+04:00  space 模式
+05:33  缓解瓶颈
+06:39  关闭 session
+06:57  使用限制
+07:41  worktree 合并
+08:56  总结
