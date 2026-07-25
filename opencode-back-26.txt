@@ -1,0 +1,17 @@
+中文标题：Claude 消失后：用 GPT + OpenCode 重建 AI 工作流
+English Title: Rebuilding the AI Workflow with GPT and OpenCode After Claude
+
+本期视频讨论在 Claude 账号遭到封禁、原有 Claude Code 动态工作流无法继续使用后，如何迁移到 GPT 与 OpenCode，并尽可能恢复原先的 AI 编程体验。现有的 iKanban 多会话管理、OpenCode 运行时以及此前积累的插件和工具仍然可用，但复杂长程任务所依赖的动态规划与自动编排能力尚未达到 Claude Code 中 UltraCode 的效果，因此需要借助 Superpower 等项目补全工作流。
+
+视频进一步将 AI workflow 解释为由多个 Skill、MCP 工具及其调用规则组成的任务图，并分析 Superpower 当前的两项主要局限：默认偏向线性执行，无法充分并行无依赖任务，导致长任务耗时显著增加；同时通过 Skill 与上下文注入工作流规则，容易形成过度 harness，稀释模型注意力并影响单个 Agent 的输出质量。虽然增加 Sub-agent、Token 和运行时间看似投入更多，但并不必然带来更好的结果，真正需要优化的是任务图的并行度、上下文纯净度以及最终产出质量。
+
+针对这些问题，视频提出将动态调度、状态存储和看板能力从核心程序中解耦，以 OpenCode 插件或 Skill 的形式独立迭代。现有配置已经能够通过 OCX 包管理器分发，后续计划是在此基础上开发更高效的动态编排能力，减少人工交互次数，并改善 Superpower 的过度上下文注入问题，最终尝试在 GPT + OpenCode 环境中实现接近 UltraCode 的长程任务处理体验。
+
+00:00  模型迁移
+01:02  工作流现状
+01:59  动态编排
+03:53  Superpower 局限
+05:58  插件化调度
+07:38  效率误区
+09:29  看板解耦
+11:06  后续计划
