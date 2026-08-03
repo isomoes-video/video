@@ -1,0 +1,20 @@
+{
+  "max_duration": 30,
+  "clips": [
+    {
+      "start": 291.98,
+      "end": 298.98,
+      "reason": "Opens with the concrete three-second viewer-retention problem that motivates the highlight feature"
+    },
+    {
+      "start": 799.07,
+      "end": 805.429,
+      "reason": "Summarizes the publishing payoff: an introduction and cover generated after the final render"
+    },
+    {
+      "start": 601.289,
+      "end": 608.289,
+      "reason": "Shows the Agent extracting candidate JPG frames so visual quality can be validated automatically"
+    }
+  ]
+}
