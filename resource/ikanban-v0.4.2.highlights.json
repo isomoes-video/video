@@ -1,0 +1,20 @@
+{
+  "max_duration": 30,
+  "clips": [
+    {
+      "start": 533.049,
+      "end": 540.49,
+      "reason": "The central product thesis: DSH serves agents while iKanban serves the humans supervising them"
+    },
+    {
+      "start": 877.539,
+      "end": 882.179,
+      "reason": "A concise comparison explaining the stronger extensibility of the new DSH architecture"
+    },
+    {
+      "start": 935.179,
+      "end": 942.5,
+      "reason": "A concrete adoption benefit: users now only need the DSH CLI to obtain the iKanban plugin"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+中文标题：多 Agent 管不过来？iKanban v0.4.2 用 DSH 重做工作台
+English Title: Too Many Agents to Manage? iKanban v0.4.2 Rebuilds the Workspace on DSH
+
+本期视频介绍 iKanban v0.4.2 如何从原来的独立 OpenCode Web 前端，迁移为基于 DeepSeek Harness（DSH）的 Web 组合包插件。新架构不再自行维护一套完整后端，而是复用 DSH 的 Agent、会话、工具、Workspace、存储、Cordis 插件树、API 网关和 Web server；iKanban 则专注于为人提供更高效的多 Agent 控制入口。视频通过一句清晰的产品定位概括两者关系：DSH 服务 Agent，iKanban 服务负责审阅、监督和协调 Agent 的人。
+
+视频首先演示完整安装和启动流程：通过 npm 安装 DSH CLI，将 `@isomoes/dsh-ikanban` 安装进独立 profile，再通过该 profile 启动 v0.4.2。随后展示 iKanban 与第三方 Codex OAuth 等插件无需额外适配层即可协同工作，并使用 GPT-5.6 订阅模型运行会话。针对键盘用户，新版继续强化命令面板、快捷键和 Session 切换体验，也介绍了正在开发的 `@` 文件引用、主题切换、看板视图回归等方向。
+
+架构部分结合图示解释 DSH 的 Cordis 插件树、profile 组合、API 网关和前后端通信方式，以及 iKanban 如何在保留 DSH 生态的同时替换和定制浏览器界面。最后，视频对比 v0.3.x 与 v0.4.2：新版本扩展性更强、前端包更精简、原型开发与二次定制更方便，用户运行时只需 DSH CLI，不再依赖独立托管页面、Docker 或 npx。视频也说明了当前功能、后续路线和迁移到 DeepSeek Harness 生态的原因。
+
+00:00  精彩预告
+00:19  项目背景
+01:18  安装启动
+02:20  功能演示
+04:09  键盘交互
+06:53  运行架构
+11:12  功能概览
+13:09  版本对比
+17:13  总结
