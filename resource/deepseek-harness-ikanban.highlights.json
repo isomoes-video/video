@@ -1,0 +1,20 @@
+{
+  "max_duration": 30,
+  "clips": [
+    {
+      "start": 1148.839,
+      "end": 1159.799,
+      "reason": "The strongest conclusion: Everything is a Plugin is not a slogan and makes the runtime reproducible and inspectable"
+    },
+    {
+      "start": 528.409,
+      "end": 540.69,
+      "reason": "A surprising concrete result where unrelated plugins from independent authors compose into a new workflow"
+    },
+    {
+      "start": 242.819,
+      "end": 248.5,
+      "reason": "A visually clear explanation of how the Web UI exposes agent-to-LLM runtime interactions"
+    }
+  ]
+}

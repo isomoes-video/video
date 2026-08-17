@@ -1,0 +1,19 @@
+中文标题：AI 编程过程看不懂？用插件化 Harness 重写 iKanban
+English Title: Can't See What Your Coding Agent Is Doing? Rebuilding iKanban on a Plugin-First Harness
+
+本期从一个实际改造项目出发，介绍如何基于 DeepSeek Harness 重写 iKanban。DeepSeek Harness 的核心理念是“Everything is a Plugin”：模型、工具、会话、界面乃至 agent runtime 都由可组合的插件构成。视频展示了它清晰的 Web review view，如何把 system prompt、工具调用、上下文注入、sub-agent 调度以及每次与 LLM server 的交互完整呈现出来，让原本像黑盒一样的 agent 运行过程更容易检查和调试。
+
+在重写过程中，iKanban 精简了旧版积累的 UI 与集成代码，并加入更适合键盘用户的操作方式。更重要的收获来自插件组合：独立开发的 dsh-iKanban 与 dsh-codex-auth 无需为彼此编写专门的集成代码，就能依靠共享接口组合出新的使用方式。这说明插件化不只是代码拆分，还能让不同作者、不同项目贡献的能力自然协作。
+
+视频也讨论了开发者预览版的现实限制，包括 immutable session 带来的回滚交互问题、对话回滚与 filesystem snapshot 尚未同步，以及 project-level MCP、skill 配置仍需补齐。随后进一步分析 Agent preset 与依赖树的关系：如果 system prompt、skill、tools、sub-agent 和 context 都能通过可版本化的插件树锁定，agent runtime 就有机会像软件包环境一样实现可复现、可检查和可迁移。结论是，DeepSeek Harness 目前尚非稳定默认选项，但 Cordis 与插件组合边界为开放的 agent 工程提供了值得继续探索的基础。
+
+00:00  精彩预告
+00:29  开场概览
+01:10  插件架构
+03:09  运行审阅
+05:08  重写看板
+06:32  改造组合
+09:43  会话回滚
+12:31  项目配置
+15:12  Agent Preset
+17:17  可复现运行时
