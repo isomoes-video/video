@@ -1,0 +1,25 @@
+{
+  "max_duration": 30,
+  "clips": [
+    {
+      "start": 736.919,
+      "end": 742.159,
+      "reason": "The @Everything idea provides the strongest concise hook for a unified resource entry point"
+    },
+    {
+      "start": 598.559,
+      "end": 605.279,
+      "reason": "A clear payoff states that three indexes cover about 90% of everyday resources"
+    },
+    {
+      "start": 304.269,
+      "end": 309.87,
+      "reason": "The terminal example visibly demonstrates fuzzy-searching command history with fzf"
+    },
+    {
+      "start": 468.589,
+      "end": 472.31,
+      "reason": "The editor example concisely shows that both filenames and file contents are searchable"
+    }
+  ]
+}
