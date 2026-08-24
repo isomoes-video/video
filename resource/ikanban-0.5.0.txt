@@ -1,0 +1,17 @@
+中文标题：AI 编程工作台如何更懂项目？iKanban 0.5.0 带来可复现 Agent 与论文协作新方向
+English Title: How Can an AI Coding Workspace Understand Your Project Better? iKanban 0.5.0 Adds Reproducible Agents and a New Research Workflow
+
+iKanban 0.5.0 在十多个迭代版本的积累上，进一步把 AI 编程工作台从基础会话工具推进为更了解项目、可检查变更并能稳定复现 Agent 环境的完整工作流。视频依次展示了在提示词中通过 @ 引用 workspace 文件、查看 Workspace Changes、切换和搜索会话视图、自定义快捷键，以及借助 timeline 回滚多轮会话等改进。
+
+本次更新的核心是内置 agent preset。它不仅改变系统提示词，还可以固定运行时中的工具、skills、MCP 和 subagent 配置，让特定任务阶段能够使用明确且可复现的 Agent 环境。视频还介绍了独立发布的 DSH Web UI，以及面向 AI 论文写作的 AI4Paper 与 iPaper：通过写作和绘图 skills 约束质量，以 MCP 从出版社和论文来源拉取资料，并在需要时对 DeepSeek Harness 的 system prompt 与 tools 进行领域化定制。最后还演示了会话完成或等待权限时的声音提醒等实用功能。
+
+00:00  精彩预告
+00:29  版本概览
+00:52  项目导航
+01:24  Agent预设
+02:56  Web界面
+03:13  iPaper
+03:53  领域能力
+04:10  论文服务
+04:59  深度定制
+05:24  实用提醒

@@ -1,0 +1,20 @@
+{
+  "max_duration": 30,
+  "clips": [
+    {
+      "start": 129.1,
+      "end": 141.0,
+      "reason": "Explains the practical value of agent presets: locking the runtime state for reproducible environments"
+    },
+    {
+      "start": 178.5,
+      "end": 188.6,
+      "reason": "Introduces iPaper as the user-facing AI4Paper workspace with a clear product role"
+    },
+    {
+      "start": 322.2,
+      "end": 327.2,
+      "reason": "Shows a concrete quality-of-life feature: audible notifications when a session completes"
+    }
+  ]
+}
