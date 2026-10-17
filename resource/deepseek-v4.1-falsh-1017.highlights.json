@@ -1,0 +1,25 @@
+{
+  "max_duration": 30,
+  "clips": [
+    {
+      "start": 583.99,
+      "end": 593.0,
+      "reason": "A concrete cost result: about 0.2 yuan per task, roughly ten times cheaper than Kimi"
+    },
+    {
+      "start": 730.0,
+      "end": 737.039,
+      "reason": "The sharpest speed comparison: GPT-6.1 Sol at 13.9 tok/s versus DeepSeek at 109 tok/s"
+    },
+    {
+      "start": 217.319,
+      "end": 223.819,
+      "reason": "A surprising strength: the model fixed the bug with a small, restrained code change"
+    },
+    {
+      "start": 497.25,
+      "end": 504.0,
+      "reason": "The time payoff on a harder task: 16 minutes for GPT versus 10 minutes for DeepSeek"
+    }
+  ]
+}
